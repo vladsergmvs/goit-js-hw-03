@@ -1,6 +1,12 @@
 
 function filterArray(numbers, value){
-    
+    const resultArr = [];
+    for (const number of numbers) {
+        if (number > value) {
+            resultArr.push(number);
+        }
+    }
+    return resultArr;
 }
  
 console.log("===================  task-3  ======================"); 
